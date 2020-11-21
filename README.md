@@ -15,8 +15,6 @@ Velero consists of:
 
 ![Velero](./img/k8s-backup-velero.png)
 
-Following sections include instructions to setup Velero on AKS cluster within UBS subscription.
-
 # Intalling Velero on AKS cluster
 
 The Velero backup tool consists of a client installed on your local computer and a server that runs in your Kubernetes cluster. To begin, we’ll install the local Velero client from [here](https://github.com/vmware-tanzu/velero/releases/tag/v1.4.2). Add Velero client to `PATH`.
