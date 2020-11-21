@@ -37,9 +37,9 @@ Edit the credentials with subscription and storage account used for backup.
 ```sh
 $ cat << EOF  > ./credentials-velero
 AZURE_SUBSCRIPTION_ID='<your-azure-subscription>'
-AZURE_TENANT_ID='<ubs-prod-tenant-id>'
-AZURE_CLIENT_ID='<aasp-client-id>'
-AZURE_CLIENT_SECRET='<aasp-client-secret>'
+AZURE_TENANT_ID='<azure-tenant-id>'
+AZURE_CLIENT_ID='<azure-client-id>'
+AZURE_CLIENT_SECRET='<azure-client-secret>'
 AZURE_RESOURCE_GROUP='<managed-aks-resource-group (starts with MC_)>'
 AZURE_CLOUD_NAME=AzurePublicCloud
 EOF
