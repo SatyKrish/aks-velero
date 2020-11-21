@@ -269,7 +269,7 @@ azure-vote-front-d8ff6fccd-jbrf2   1/1     Running   0          45s
 
 Verify whether the app is loading in brower by entering host url.
 
-> Chrome: https://kd43e539473wma01k8s.aks.azure.ubsdev.net/
+> Chrome: https:/<FQDN>/
 
 ## Cluster Level Backup/Restoration
 
