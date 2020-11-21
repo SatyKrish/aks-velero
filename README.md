@@ -60,9 +60,9 @@ Run the `velero` install command with some non-default configuration options.
 
 ```sh
 $ velero install \
---image poc-container-registry.ubs.net/velero/velero:v1.4.0 \
+--image velero:v1.4.0 \
 --provider azure \
---plugins poc-container-registry.ubs.net/velero/velero-plugin-for-microsoft-azure:v1.1.0 \
+--plugins velero-plugin-for-microsoft-azure:v1.1.0 \
 --velero-pod-cpu-limit 1 \
 --velero-pod-mem-limit 1Gi \
 --bucket <blob-container-name> \
