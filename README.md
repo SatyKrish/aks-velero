@@ -1,6 +1,9 @@
-# Introduction
+# Backup & Restore Stateful Applications on AKS using Velero
 
-Velero (formerly Heptio Ark) provides capabilities to back up and restore your Kubernetes cluster resources and persistent volumes.
+A reference implementation for using Velero in AKS cluster to backup and restore persistent volumes using CSI storage drivers.
+
+## Overview
+Velero provides capabilities to back up and restore your Kubernetes cluster resources and persistent volumes.
 
 Velero lets you:
 
@@ -15,7 +18,7 @@ Velero consists of:
 
 ![Velero](./img/k8s-backup-velero.png)
 
-# Intalling Velero on AKS cluster
+## Intalling Velero on AKS cluster
 
 The Velero backup tool consists of a client installed on your local computer and a server that runs in your Kubernetes cluster. To begin, we’ll install the local Velero client from [here](https://github.com/vmware-tanzu/velero/releases/tag/v1.4.2). Add Velero client to `PATH`.
 
@@ -295,6 +298,6 @@ kubectl delete crds -l component=velero
 
 ```
 
-# Next Steps
+## Next Steps
 
 - Velero can also be used to schedule regular backups of your Kubernetes cluster for disaster recovery. To do this, you can use the `velero schedule` command. 
